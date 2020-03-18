@@ -165,12 +165,15 @@ span {
 }
 
 /* footer */
-.aboutCards {
+.aboutCardsContainer {
     padding-top: 35px;
     padding-bottom: 80px;
     background-color: #F5FDFF;
 }
+.aboutCards {
 
+    transform: translate(6%, 0%);
+}
 .more {
     text-align: center;
     font-weight: 900;
@@ -181,8 +184,9 @@ span {
     display: flex;
     width: 100%;
     padding-bottom: 40px;
-    transform: translate(5%,0);
+    /* transform: translate(7%,0); */
     align-items: center;
+    justify-content: center;
 }
 .contain1, .contain2, .contain3 {
     position: relative;
@@ -193,7 +197,7 @@ span {
 .photo1, .photo2, .photo3 {
     display: block;
     height: auto;
-    width: 70%;
+    width: 60%;
     /* justify-content: space-evenly;
     height: auto; */
     margin-top: 20px;
@@ -202,7 +206,7 @@ span {
 }
 .overlay {
     /* display: flex; */
-    width: 70%;
+    width: 60%;
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -222,15 +226,15 @@ span {
 
 .contain1:hover .overlay {
     bottom: 0;
-    height: 93%;
+    height: 94%;
 }
 .contain2:hover .overlay {
     bottom: 0;
-    height: 93%;
+    height: 94%;
 }
 .contain3:hover .overlay {
     bottom: 0;
-    height: 93%;
+    height: 94%;
 }
 .text {
     font-family: 'Raleway';
