@@ -1,9 +1,9 @@
 body {
     font-family: 'Montserrat';
-    padding:40px;
-    width: 80%px;
+    width: 100%;
+    margin: 0px;
 }
-.navbar {
+#navbar {
     display: flex;
     position: fixed;
     width: 100%;
@@ -11,12 +11,20 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     justify-items: space-between;
-
     top: 0;
     width: 100%;
     transition: top 0.3s;
     background-color: rgba(255, 255, 255, .8);
     z-index: 1;
+}
+.navbarContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 10px;
+    width: 100%;
+    font-family: 'Montserrat';
 }
 .left {
     display: flex;
@@ -24,7 +32,7 @@ body {
     font-weight: bold;
     color: #595959;
     letter-spacing: .2em;
-    width: 60%;
+    width: 90%;
 }
 ul {
     list-style-type: none;
@@ -33,38 +41,51 @@ ul {
     overflow: hidden;
 }
 li {
-    float: right;
+    float: left;
     display: block;
-    text-align: center:
+    text-align: center;
     color: #595959;
     padding: 14px 16px;
-}
-li a:hover {
-    color: #568CB3;
-}
-li a:link {
-    color: #595959;
-    text-decoration: none;
-}
-li a:visited {
-    color: #7BD7E8;
-    text-decoration: none;
 }
 .right {
     display: flex;
     float: right;
     font-size: 18px;
     font-weight: 900;
-    width: 75%;
+    width: 80%;
     color: #595959;
+    text-decoration: none;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.right li a:link {
+    color: #595959;
     text-decoration: none;
 }
+.right li a:visited {
+    color: #1C2399;
+    text-decoration: none;
+}
+.right li a:focus {
+    color: #568CB3;
+}
+.right li a:hover {
+    color: #568CB3;
+}
+.right li a:active {
+    color: #568CB3;
+}
+
 .column {
     width: 100%;
     display: inline-block;
     padding-top: 100px;
+    
+}
+.columnText {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /*body styling*/
@@ -78,10 +99,19 @@ h2 {
 h3 {
     font-size: 16px;
     font-weight: 600;
+    font-family: 'Montserrat';
+    line-height: 1.6;
+}
+h5 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Raleway';
+    line-height: 1.6;
 }
 p {
-    font-size: 14px;
-    line-height: 1.5em;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Raleway';
 }
 h4 {
     display: flex;
@@ -92,7 +122,8 @@ h4 {
 
 /* A little about me */
 .aboutMe {
-    padding-bottom: 40px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 .link {
     color: #568CB3;
@@ -106,9 +137,14 @@ h4 {
 /* My values */
 .values {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 80px;
     background-color:rgba(210, 237, 243, 0.4);
+}
+.valueText{
+    padding-left: 100px;
+    padding-right: 100px;
+    /* use flexbox to add padding */
 }
 .value1, .value2, .value3, .value4 {
     padding-bottom: 15px;
@@ -120,14 +156,21 @@ span {
 
 /* testimonial */
 .testimonials {
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.testimonialsText {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 /* footer */
-.footer {
-    padding-top: 10px;
+.aboutCards {
+    padding-top: 35px;
+    padding-bottom: 80px;
+    background-color: #F5FDFF;
 }
+
 .more {
     text-align: center;
     font-weight: 900;
@@ -137,9 +180,9 @@ span {
     position: relative;
     display: flex;
     width: 100%;
-    padding: 10px;
-    margin: 10px;
     padding-bottom: 40px;
+    transform: translate(5%,0);
+    align-items: center;
 }
 .contain1, .contain2, .contain3 {
     position: relative;
@@ -148,43 +191,61 @@ span {
     text-align: center;
 }
 .photo1, .photo2, .photo3 {
-    display: flex;
+    display: block;
     height: auto;
-    width: 80%;
-    justify-content: space-evenly;
-    height: auto;
+    width: 70%;
+    /* justify-content: space-evenly;
+    height: auto; */
     margin-top: 20px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+    border-radius: 15px;
 }
 .overlay {
-    display: flex;
+    /* display: flex; */
+    width: 70%;
     position: absolute;
     bottom: 100%;
     left: 0;
     right: 0;
     background-color: rgba(255, 255, 255, .85);
     overflow: hidden;
-    width: 100%;
     height: 0;
     margin-top: 20px;
+    border-radius: 15px;
     transitions: .5s ease;
-    justify-content: center;
+    /* justify-content: center;
+    align-items: center; */
+}
+.overlay:hover {
     align-items: center;
 }
 
 .contain1:hover .overlay {
     bottom: 0;
-    height: 100%
+    height: 93%;
 }
 .contain2:hover .overlay {
     bottom: 0;
-    height: 100%
+    height: 93%;
 }
 .contain3:hover .overlay {
     bottom: 0;
-    height: 100%
+    height: 93%;
+}
+.text {
+    font-family: 'Raleway';
+    white-space: nowrap; 
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
+/*get in touch*/
 .connect {
     text-align: center;
     font-weight: bold;
@@ -197,6 +258,10 @@ span {
     width: 1.5%;
     height: 1.5%;
     margin-left: 10px;
+}
+.icon2 {
+    width: 40%;
+    height: 40%;
 }
 .column2 {
     flex: 33.3%;
@@ -211,12 +276,16 @@ span {
     margin-left: 15%;
 }
 .connect2 {
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 20%;
     align-items: center;
 }
+.moveUp {
+    margin-top: -50px;
+}
 
-.column2:hover {
+
+.icon2:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 i {

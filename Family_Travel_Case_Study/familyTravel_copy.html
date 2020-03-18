@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <!-- <script src="https://kit.fontawesome.com/0d4dcfc96a.js" crossorigin="anonymous"></script> -->
+        <script src="../nav.js" rel="script/javascript"></script> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
@@ -115,7 +116,7 @@
                                 <!-- The Close Button -->
                                 <span class="close">&times;</span>
                                 <!-- Modal Content (The Image) -->
-                                <img class="modal-content1" id="img01">
+                                <img class="modal-content1 scale-down" id="img01">
                                 <!-- Modal Caption (Image Text) -->
                                 <div id="caption1"></div>
                             </div>
@@ -156,9 +157,6 @@
                                 <!-- Modal Caption (Image Text) -->
                                 <div id="caption3"></div>
                             </div>
-                            
-                            
-                            <!-- <div class="infographic"><img class="infographic" src="../Family Travel Case Study/Images/hierarchy.svg"></div> -->
                         </div>
                         <div class="col-lg-6">
                             <div class="title">Insights</div>
@@ -215,13 +213,12 @@
                 <div class="container-fluid">
                     <!--insights-->
                     <div class="row between2">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="title">Storyboard</div>
                             <br>
                             <p>A storyboard helps us to identify key moments a parent experiences while planning a family vacation. It helped us 
                                 ideate potential screens we would need to design for the Family Travel mobile app.</p>
                         </div>
-                        <div class="cardContainer col-lg-6"></div>
                     </div>
                     <div class="row space">
                         <div class="col-lg-12">
@@ -244,10 +241,9 @@
                         <div class="col-lg-6"></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <p>The storyboard helped us establish a shared vision and revealed issues and key screens early in the development process.</p>
                         </div>
-                        <div class="col-lg-6"></div>
                     </div>
                     <div class="row space">
                         <div class="col-lg-12">
@@ -267,7 +263,7 @@
                     <!--user persona-->
                     <div class="row betweenLess">
                         <div class="col-lg-6">
-                            <div class="title">User Persona</div>
+                            <div class="title shiftDown">User Persona</div>
                             <br>
                             <p>Based on the storyboard, we identified our main parent in the story. We used proto-personas to help us stay anchored on the user and avoid letting our desire for features trump user needs.
                                 <br><br>
@@ -289,12 +285,30 @@
                         </div>
                     </div>
                     <!--user flow-->
-                    <div class="row space2 betweenBelow2">
+                    <div class="row  between2">
                         <div class="col-lg-6">
-                            <br><br><br><div class="title">User Flow</div>
-                            <!-- <br><br> -->
+                            <div class="title">User Flow</div>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                    <div class="row  between3">
+                        <div class="col-lg-12">
+                            <p>Userflows helped us identify key actions Stephanie would take within the app and the screens to focus on first.
+                                <br><br>
+                                During the empathize phase, we learned that parents trust recommendations from their friends and family. Therefore, we wanted to have Stephanie start by reviewing 
+                                itineraries her friends have shared. She could customize her own family’s trip by making a copy. Stephanie could then search for family-friendly activities along 
+                                her route by location. She can share her itinerary with friends and feel accomplished.
+                                <br><br>
+                                Since the research, planning, and finalized itinerary all occurred within the Family Travel app, she can also feel accomplished that her plans are 
+                                all in one place. We next need to consider how she could access and edit her itinerary offline. While traveling, she may not have reliable internet access.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row betweenBelow2">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
                             <!-- Trigger the Modal -->
-                            <img id="myImg7" class="space" src="../Family_Travel_Case_Study/Images/flow/flowCommentsTiny.png" alt="Stephanie Smith - mother of two" style="width:85%;height:85%">
+                            <img id="myImg7" class="shiftDown2 moveRight" src="../Family_Travel_Case_Study/Images/flow/flowCommentsTiny.png" alt="Stephanie Smith - mother of two" style="width:85%;height:85%">
                             <!-- The Modal -->
                             <div id="myModal7" class="modal7">
                                 <!-- The Close Button -->
@@ -305,17 +319,7 @@
                                 <div id="caption7"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <p><br><br>Userflows helped us identify key actions Stephanie would take within the app and the screens to focus on first. 
-                                <br><br>
-                                Since we learned that parents trust recommendations from their friends and family, we wanted to have Stephanie start by reviewing itineraries her 
-                                friends have shared. She could customize her own family’s trip by making a copy. Stephanie could then search for family-friendly activities along 
-                                her route by location. She can share her itinerary with friends and feel accomplished.
-                                <br><br>
-                                Since the research, planning, and finalized itinerary all occurred within the Family Travel app, she can also feed accomplished that her plans are 
-                                all in one place. We next need to consider how she could access and edit her itinerary offline. While traveling, she may not have reliable internet access.
-                            </p>
-                        </div>
+                        <div class="col-lg-1"></div>
                     </div>
                 </div>
             </section>
@@ -590,208 +594,7 @@
     </section>
 
     
-    <!-- <script src="../Family_Travel_Case_Study/JS/familyTravel.js"></script> -->
-
-
-    <!--nav scroll-->
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-135px";
-            }
-        prevScrollpos = currentScrollPos;
-        }
-    </script>
-
-    <!--image modal-->
-    <script>
-    // Get the modal
-        var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption1");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-        }
-
-    // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-    </script>
-
-    <!--image modal 2-->
-    <script>
-        // Get the modal
-            var modal = document.getElementById("myModal2");
-    
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg2");
-            var modalImg = document.getElementById("img02");
-            var captionText = document.getElementById("caption2");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-    
-        // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close2")[0];
-    
-        // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-            }
-    </script>
-    <!--image modal 3-->
-    <script>
-        // Get the modal
-            var modal = document.getElementById("myModal3");
-    
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg3");
-            var modalImg = document.getElementById("img03");
-            var captionText = document.getElementById("caption3");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-    
-        // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close3")[0];
-    
-        // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-            }
-    </script>
-    <!--image modal 4-->
-     <script>
-        // Get the modal
-            var modal = document.getElementById("myModal4");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg4");
-            var modalImg = document.getElementById("img04");
-            var captionText = document.getElementById("caption4");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-        // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close4")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-             }
-    </script>
-    <!--image modal 5-->
-    <script>
-        // Get the modal
-             var modal = document.getElementById("myModal5");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg5");
-            var modalImg = document.getElementById("img05");
-            var captionText = document.getElementById("caption5");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-        // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close5")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-            }
-    </script>
-    <!--image modal 6-->
-    <script>
-        // Get the modal
-             var modal = document.getElementById("myModal6");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg6");
-            var modalImg = document.getElementById("img06");
-            var captionText = document.getElementById("caption6");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-        // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close6")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-            }
-    </script>
-    <!--image modal 7-->
-    <script>
-        // Get the modal
-             var modal = document.getElementById("myModal7");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg7");
-            var modalImg = document.getElementById("img07");
-            var captionText = document.getElementById("caption7");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-        // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close7")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-            }
-    </script>
-    <!--image modal 8-->
-    <script>
-        // Get the modal
-             var modal = document.getElementById("myModal8");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg8");
-            var modalImg = document.getElementById("img08");
-            var captionText = document.getElementById("caption8");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-        
-        // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close8")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-            }
-    </script>
+    <script src="../Family_Travel_Case_Study/JS/familyTravel.js"></script>
 
     </body>
 </html>
