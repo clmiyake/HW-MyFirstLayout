@@ -1,0 +1,427 @@
+body {
+    width: 100%;
+}
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-items: space-between;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    background-color: rgba(255, 255, 255, .8);
+    z-index: 1;
+}
+.navbarContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 10px;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+.left {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    color: #595959;
+    letter-spacing: .2em;
+    width: 90%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 30px;
+    overflow: hidden;
+}
+li {
+    float: left;
+    display: block;
+    text-align: center;
+    color: #595959;
+    padding: 14px 16px;
+}
+.right {
+    display: flex;
+    float: right;
+    font-size: 18px;
+    font-weight: 900;
+    width: 80%;
+    color: #595959;
+    text-decoration: none;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.right li a:link {
+    color: #595959;
+    text-decoration: none;
+}
+.right li a:visited {
+    color: #1C2399;
+    text-decoration: none;
+}
+.right li a:focus {
+    color: #568CB3;
+}
+.right li a:hover {
+    color: #568CB3;
+}
+.right li a:active {
+    color: #568CB3;
+}
+
+.column {
+    width: 100%;
+    display: inline-block;
+    padding-top: 135px;
+}
+.columnText {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/*body styling*/
+h1 {
+    font-size: 46px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 1.6;
+    margin: .67em 0;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    line-height: 1.6;
+    letter-spacing: .1em;
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #296BAD;
+    font-family: 'Raleway';
+    display: flex;
+    text-align: start;
+}
+.title2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #296BAD;
+    font-family: 'Raleway';
+    display: flex;
+    text-align: start;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    line-height: 1.6;
+    letter-spacing: .1em;
+}
+p {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    letter-spacing: .1em;
+}
+p2 {
+    font-size: 14px;
+    line-height: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .1em;
+}
+h4 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Raleway';
+    line-height: 1.6;
+    letter-spacing: .1em;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    color: #296BAD;
+    line-height: 1;
+    letter-spacing: .1em;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/*hero banner*/
+.hero {
+    background-size: cover;
+    height: 100%;
+    min-height: 550px
+  }
+/* .helloContainer {
+    display: block;
+} */
+.jumbotron {
+    background-size: cover;
+    height: 100%;
+    min-height: 550px
+  }
+.heading {
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    top: 28%;
+    width: 70%;
+    text-align: center;
+    align-content: center;
+    /* transform: translate(0, 375%); */
+}
+.myh1 {
+    display: inline-block;
+    margin: auto;
+    top: 38%;
+    /* top: 238%; */
+    height: auto;
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    /* transform: translate(0%, 410%); */
+}
+.nameLink {
+    /* left: 50%;
+    transform: translate(0,200%); */
+    display: inline-block;
+    background-color: #D2EDF3;
+    color: black;
+    font-size: 46px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 1.6;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    position: relative;
+    text-align: left;
+}
+.nameLink:hover {
+    background-color: white;
+    background-image: none;
+    color: white;
+    border-radius: 0px;
+    opacity: 1;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 1.6;
+    text-decoration: none;
+}
+a {
+    display: inline-block;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    color: #1a1b1f;
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+}
+a:hover {
+    cursor: pointer;
+    color: #32343a;
+    outline: 0;
+    text-decoration: none;
+}
+.outline {
+    display: inline-block;
+    color: white;
+    border-radius: 0px;
+    opacity: 1;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 1.6;
+    text-decoration: none;
+}
+.outline:hover {
+    background-color: #D2EDF3;
+    background-image: none;
+    color: #191b1e;
+    text-shadow: none;
+    text-decoration: none;
+}
+.explain {
+    text-align: center;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(30%,0);
+}
+.divider {
+    background-color: black;
+    height: 5px;
+    width: 200px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    top: 72%;
+    left: 44%;
+    position: absolute;
+    /* transform: translate(40%, 40%); */
+}
+.break {
+    padding-top:100px;
+}
+.break2 {
+    padding-top: 3%;
+}
+
+/* projects */
+.headline {
+    font-weight: 900;
+    /* font-size: 36px; */
+}
+.projectContainer {
+    background-size: cover;
+    height: 100%;
+    min-height: 1000px;
+    position: absolute;
+    /* display: inline-block; */
+    margin: auto;
+    /* top: 28%; */
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    /* align-content: center; */
+}
+/* .imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+} */
+/* .image {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 86%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    left: 7%;
+}
+
+
+.imageContainer:hover .overlay {
+    opacity: 1;
+
+    /* position: absolute;
+    bottom: 0;
+    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    padding: 20px;
+    text-align: center; */
+}
+
+
+
+/*footer*/
+/* .footerContainer {
+    width: 100%;
+} */
+.footer {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 1350px;
+}
+.connect {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 60px;
+    width: 100%;
+    background-color:#D2EDF3;
+}
+.icon {
+    width: 1.5%;
+    height: 1.5%;
+    margin-left: 10px;
+}
+.icon2 {
+    width: 40%;
+    height: 40%;
+}
+.column2 {
+    flex: 33.3%;
+    padding: 60px;
+    justify-content: space-between;
+}
+.row {
+    display: flex;
+    width: 70%;
+    height: 70%;
+    align-items: center;
+    margin-left: 15%;
+}
+.connect2 {
+    width: 20%;
+    height: 20%;
+    align-items: center;
+}
+
+.icon2:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+/* For desktop: */
+.col-1 {width: 100%;}
+.col-2 {width: 16.66%;}
+/* .col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
