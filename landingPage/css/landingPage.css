@@ -15,6 +15,9 @@ body {
     background-color: rgba(255, 255, 255, .8);
     z-index: 1;
 }
+.topnav {
+    overflow: hidden;
+}
 .navbarContent {
     display: flex;
     justify-content: center;
@@ -74,6 +77,31 @@ li {
 .right li a:active {
     color: #568CB3;
 }
+/*new code for responsive*/
+.right .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+     a:not(:first-child) {display:none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 
 .column {
     width: 100%;
@@ -175,31 +203,35 @@ h5 {
 /* .helloContainer {
     display: block;
 } */
-.jumbotron {
+/* .jumbotron {
     background-size: cover;
     height: 100%;
     min-height: 550px
-  }
+  } */
 .heading {
-    position: absolute;
-    display: inline-block;
-    margin: auto;
-    top: 28%;
-    width: 70%;
-    text-align: center;
-    align-content: center;
-    /* transform: translate(0, 375%); */
+    /* position: relative;
+    display: inline-block; */
+    /* margin-left: 50px; */
+    top: 100px;
+    /* left: 200px; */
+    min-width: 700px;
+    /* text-align: center;
+    align-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(40%,0);
 }
 .myh1 {
-    display: inline-block;
-    margin: auto;
-    top: 38%;
+    /* display: inline-block; */
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 38%; */
     /* top: 238%; */
-    height: auto;
-    width: 70%;
-    position: absolute;
+    /* height: auto;
+    width: 70%; */
+    /* position: absolute; */
     text-align: center;
-    /* transform: translate(0%, 410%); */
+    transform: translate(-80px, 0);
 }
 .nameLink {
     /* left: 50%;
@@ -231,7 +263,7 @@ h5 {
     line-height: 1.6;
     text-decoration: none;
 }
-a {
+/* a {
     display: inline-block;
     -webkit-transition: opacity 200ms ease;
     transition: opacity 200ms ease;
@@ -245,7 +277,7 @@ a:hover {
     color: #32343a;
     outline: 0;
     text-decoration: none;
-}
+} */
 .outline {
     display: inline-block;
     color: white;
@@ -267,7 +299,7 @@ a:hover {
 }
 .explain {
     text-align: center;
-    padding-top: 200px;
+    padding-top: 120px;
     margin-left: auto;
     margin-right: auto;
     transform: translate(30%,0);
@@ -300,7 +332,7 @@ a:hover {
     background-size: cover;
     height: 100%;
     min-height: 1000px;
-    position: absolute;
+    /* position: absolute; */
     /* display: inline-block; */
     margin: auto;
     /* top: 28%; */
@@ -309,23 +341,31 @@ a:hover {
     padding-top: 50px;
     /* align-content: center; */
 }
+/*boxshadow image cards*/
+.boxshadow {
+    width: 492px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+}
+
+
 /* .imageContainer {
     position: relative;
     width: 100%;
     max-width: 300px;
 } */
-/* .image {
-    display: block;
-    width: 100%;
+.image {
+    /* display: block; */
+    width: 491px;
     height: auto;
-} */
+}
 .overlay {
     position: absolute;
     bottom: 0;
     background: rgb(0,0,0);
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 86%;
+    width: 491px;
     transition: .5s ease;
     opacity: 0;
     color: white;
@@ -360,9 +400,10 @@ a:hover {
 .footer {
     margin-left: 0px;
     margin-right: 0px;
-    padding-top: 1350px;
+    padding-top: 150px;
 }
 .connect {
+    display: block;
     text-align: center;
     font-weight: bold;
     font-size: 24px;
@@ -375,31 +416,43 @@ a:hover {
     height: 1.5%;
     margin-left: 10px;
 }
-.icon2 {
-    width: 40%;
-    height: 40%;
+/* .icon2 {
+    width: 100%;
+    height: 100%;
+} */
+.fal, .fab {
+    color: black;
+    height: 100%;
+    width: auto;
+}
+.fal:hover, .fab:hover {
+    color:#EC5569;
+    text-decoration: none;
 }
 .column2 {
-    flex: 33.3%;
+    /* flex: 33.3%; */
     padding: 60px;
+    display: flex;
     justify-content: space-between;
+    left: 200px;
 }
 .row {
     display: flex;
     width: 70%;
     height: 70%;
     align-items: center;
+    justify-content: space-evenly;
     margin-left: 15%;
 }
-.connect2 {
-    width: 20%;
-    height: 20%;
+/* .connect2 {
+    width: 100%;
+    height: 100%;
     align-items: center;
-}
+} */
 
-.icon2:hover {
+/* .icon2:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
+} */
 
 
 
